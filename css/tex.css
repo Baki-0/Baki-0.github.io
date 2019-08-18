@@ -1,0 +1,24 @@
+header {
+	display:block;
+	padding:25px;
+	background:#333;
+	color:white
+}
+
+h1 {
+	font-size:240%
+}
+
+body {
+    background-color:rgb(19, 184, 196);
+}
+
+div#container {
+    width: 75%;
+    margin: auto;
+    padding:30px;
+    background-color:white
+}
+h2{
+    color:rgb(0, 4, 219);
+}
