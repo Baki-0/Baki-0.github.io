@@ -1,20 +1,12 @@
 header {
 	display:block;
 	padding:25px;
-    background:#333;
-    border-radius: 30px;
-    font-style: normal;
-    color:white
-    
+	background:#333;
+	color:white
 }
 
 h1 {
-	font-size:280%
-}
-
-h2 {
-    font-size:200%;
-    font-family: arial, sans-serif;
+	font-size:240%
 }
 
 body {
@@ -26,5 +18,4 @@ div#container {
     margin: auto;
     padding:30px;
     background-color:white
-    
 }
