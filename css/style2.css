@@ -28,7 +28,7 @@ a {
     margin:1em auto;
     padding: 1em;
     width: 90%; /* ボックス幅 */
-/*    background-color: #EEFFFF; */
+    /*background-color: #EEFFFF; */
     color: azure; /* 文章色 */
     box-shadow: 0 0 5px 1px azure; /* 影 */
     border-radius: 10px; /* 角の丸み */
