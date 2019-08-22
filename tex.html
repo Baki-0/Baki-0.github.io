@@ -15,6 +15,7 @@
     <meta name="description" content="淵野アタリにやれって言われた" />
     <title>BBBBBBB</title>
     <link rel="stylesheet" href="css/tex.css" >
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 本文テンプレ
 </h2>
 <pre>
-\documentclass{jsarticle}
+<code class="prettyprint linenums lang-tex">\documentclass{jsarticle}
 \usepackage{pxrubrica}
 \usepackage{siunitx}
 \usepackage[dvipdfmx]{graphicx}
@@ -48,6 +49,7 @@
 \section{参考文献}
 
 \end{document}
+</code>
 </pre>
 
 <h2>
@@ -97,11 +99,13 @@
     図の挿入
 </h2>
 <pre>
+<code>
 \begin{figure}[h]
     \centering
     \includegraphics[width=10cm,pagebox=cropbox,clip]{ファイル名.pdf}
     \caption{図の説明}
 \end{figure}
+</code>
 </pre>
 
 <h2>
@@ -121,6 +125,7 @@
     表の挿入
 </h2>
 <pre>
+<code>
 \begin{table}[htb]
 \centering
 \caption{(グラフのタイトル)}
@@ -128,6 +133,7 @@
     %Webサイトでの変換結果をここに挿入
 
 \end{table}
+</code>
 </pre>
 
 <h2>

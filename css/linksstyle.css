@@ -24,24 +24,22 @@ div#container {
     font-size: 150%;
 }
 
+ul{
+    list-style-type: none;
+    text-align: center;
+}
 a {
-    margin:1em auto;
-    padding: 1em;
-    width: 90%; /* ボックス幅 */
-    /*background-color: #EEFFFF; */
+    display: inline-block;
     color: azure; /* 文章色 */
     box-shadow: 0 0 5px 1px azure; /* 影 */
     border-radius: 10px; /* 角の丸み */
     text-decoration: none;
-    }
+    padding: 20px;
+    width: 300px;
+    margin: 15px;
+}
 
-a#top {
-    margin:1em auto;
-    padding: 1em;
-    width: 90%; /* ボックス幅 */
-    /*background-color: #EEFFFF; */
-    color: azure; /* 文章色 */
-    box-shadow: 0 0 5px 1px azure; /* 影 */
-    border-radius: 100px; /* 角の丸み */
-    text-decoration: none;
-    }
+
+#blank p{
+    height: 100px;
+}
