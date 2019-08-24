@@ -28,7 +28,7 @@ ul{
     list-style-type: none;
     text-align: center;
 }
-ul li {
+a {
     display: inline-block;
     color: azure; /* 文章色 */
     box-shadow: 0 0 5px 1px azure; /* 影 */
@@ -36,9 +36,5 @@ ul li {
     text-decoration: none;
     padding: 20px;
     width: 300px;
-    margin: 10px;
-}
-a {
-    color: azure; /* 文章色 */
-    text-decoration: none;
+    margin: 15px;
 }

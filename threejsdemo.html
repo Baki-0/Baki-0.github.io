@@ -7,17 +7,17 @@
     // ページの読み込みを待つ
     window.addEventListener('load', init);
 
+    
     function init() {
 
       // サイズを指定
       const width = 960;
       const height = 540;
-
+      let rot = 0;
       // レンダラーを作成
       const renderer = new THREE.WebGLRenderer({
         canvas: document.querySelector('#myCanvas')
       });
-      renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(width, height);
 
       // シーンを作成
@@ -25,19 +25,56 @@
 
       // カメラを作成
       const camera = new THREE.PerspectiveCamera(45, width / height);
-      camera.position.set(0, 0, +1000);
 
-      // 箱を作成
-      const geometry = new THREE.BoxGeometry(400, 400, 400);
+      // 球を作成
+      const geometry = new THREE.SphereGeometry(300, 30, 30);
       const material = new THREE.MeshNormalMaterial();
-      const box = new THREE.Mesh(geometry, material);
-      scene.add(box);
+      const mesh = new THREE.Mesh(geometry, material);
+      scene.add(mesh);
 
+      // 平行光源
+      const directionalLight = new THREE.DirectionalLight(0xFFFFFF);
+      directionalLight.position.set(1, 1, 1);
+      // シーンに追加
+      scene.add(directionalLight);
+
+      // 星屑を作成します (カメラの動きをわかりやすくするため)
+      createStarField();
+        function createStarField() {
+          // 形状データを作成
+          const geometry = new THREE.Geometry();
+          for (let i = 0; i < 1000; i++) {
+            geometry.vertices.push(
+              new THREE.Vector3(
+                3000 * (Math.random() - 0.5),
+                3000 * (Math.random() - 0.5),
+                3000 * (Math.random() - 0.5)
+              )
+            );
+          }
+          // マテリアルを作成
+          const material = new THREE.PointsMaterial({
+            size: 10,
+            color: 0xffffff
+          });
+          // 物体を作成
+          const mesh = new THREE.Points(geometry, material);
+          scene.add(mesh);
+        }
       tick();
 
       // 毎フレーム時に実行されるループイベントです
       function tick() {
-        box.rotation.y += 0.01;
+        rot += 0.91;
+
+        // ラジアンに変換する
+        const radian = (rot * Math.PI) / 180;
+          // 角度に応じてカメラの位置を設定
+          camera.position.x = 1000 * Math.sin(radian);
+          camera.position.z = 1000 * Math.cos(radian);
+          // 原点方向を見つめる
+          camera.lookAt(new THREE.Vector3(0, 0, 0));
+
         renderer.render(scene, camera); // レンダリング
 
         requestAnimationFrame(tick);
