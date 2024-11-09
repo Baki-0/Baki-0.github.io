@@ -1,33 +1,76 @@
 header {
-	display:block;
-	padding:25px;
-    background:#333;
-    border-radius: 30px;
+    width: 90%;
+    margin: auto;
+    display:block;
+	padding:20px;
+    background:#121212;
+    border-radius: 20px;
     font-family: arial, sans-serif;
 
     font-style: normal;
     color:white
-    
 }
 
 h1 {
-	font-size:280%
+	font-size:40px;
 }
 
+
+                
 h2 {
-    font-size:200%;
+    padding: 0.2rem;
+    margin-bottom: 0.2rem;
+    background: linear-gradient(transparent 70%, #00d9ff 100%);
+    font-weight: bold;
+    font-size: 30px;
     font-family: arial, sans-serif;
 }
 
+h3 {
+    padding: 2rem 0 1rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #031579 0% 100%);
+    background-repeat: no-repeat;
+    background-size: 100px 2px;
+    background-position: left bottom;
+    font-size: 26px;
+}
+
+h4 {
+    padding: 1rem 0 0.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #031579 0% 100%);
+    background-repeat: no-repeat;
+    background-size: 10rem 2px;
+    background-position: left bottom;
+    font-size: 18px;
+}
+
+
 body {
-    background-color:rgb(19, 184, 196);
+    margin: 0px 0px 0px 0px;
+    background: #67B26F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #00d9ff, #031579);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #00d9ff, #031579); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 img {
     max-width: 100%;
     height: auto
 }
+div#title {
+    width: 90%;
+    margin: auto;
+    display:block;
+	padding:20px;
+    background:#121212;
+    border-radius: 20px;
+    font-family: arial, sans-serif;
 
+    font-style: normal;
+    color:white
+    
+}
 div#container {
     width: 75%;
     margin: auto;

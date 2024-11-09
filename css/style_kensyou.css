@@ -1,8 +1,8 @@
 header {
 	display:block;
-	padding:25px;
-    background:#333;
-    border-radius: 30px;
+	padding:20px;
+    background:#121212;
+    border-radius: 20px;
     font-family: arial, sans-serif;
 
     font-style: normal;
@@ -20,7 +20,9 @@ h2 {
 }
 
 body {
-    background-color:rgb(200, 162, 200);
+    background: rgb(200, 162, 200);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #00d9ff, #031579);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #00d9ff, #031579); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 img {
